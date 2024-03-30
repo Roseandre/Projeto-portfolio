@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd; 
+    --cor-hover: #272727; 
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.cabecalho__menu__link:hover{
+   color: #0000FF;
+}
+body{
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+button {
+background-color: var(--cor-terciaria);
+color: darkblue;
+}
+a {
+    color: darkgreen;
+}
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 40PX;
+}
+.apresentacao__titulo{
+    text-align: left;
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__conteudo__paragrafo{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__botoes{
+    display:flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links__botoes:hover{
+background-color: var(--cor-hover);
+border: 2px solid #0000FF;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.apresentacao__titulo2__resume{
+    text-align: left;
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+} 
+
+.design__titulo{
+    padding: 5% 15%;
+    display: flex;
+    align-items: left; 
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);      
+}
+
+.carrossel {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: auto; 
+}
+.design__imagens{
+    display: flex;
+    flex-direction: row;
+    scroll-snap-align: start; 
+}
+
+.design__imagens img{
+    width: 100%;
+    scroll-snap-align: start; 
+}
+.design__imagens{
+    padding: 0% 15%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+.slides img {
+    display: none;
+}
+.slides img:first-child {
+    display: block;
+}
+.apresentacao__imagens{
+    width: 50%;
+}
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 10px;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+    width: auto;
+    justify-content: center;
+    }
+    .design__imagens {
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .apresentacao__imagens{
+        width: 70%;
+    }
+   .apresentacao__conteudo__paragrafoii {
+    padding-left: 10%;
+   }
+}
