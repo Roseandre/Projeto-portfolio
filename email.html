@@ -14,46 +14,44 @@
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="resume.html">Resume</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
         </nav>
     </header>
-    <h1 class="apresentacao__titulo-formulario">Contato</h1>
-    <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
-        <input type="hidden" name="recipient" value="roseaneborges@alabuta.com">
-        <input type="hidden" name="redirect" value="https://github.com/Roseandre/Portfolio">
-        <input type="hidden" name="subject" value="teste de assunto"> 
-        <input type="hidden" name="email" value="roseaneborges@alabuta.com">
 
-        <div class="formulario">
-            <div>
-                <p class="formulario-paragrafo">
-                    Nome:<br />
-                    <input type="text" size="50" name="nome" class="formulario-nome">
-                </p>
+    <main class="apresentacao__formulario">
+        <h1 class="apresentacao__titulo">Contato</h1>
+        <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
+            <input type="hidden" name="recipient" value="roseaneborges@alabuta.com">
+            <input type="hidden" name="redirect" value="https://github.com/Roseandre/Portfolio">
+            <input type="hidden" name="subject" value="teste de assunto">
+            <input type="hidden" name="email" value="roseaneborges@alabuta.com">
+
+            <div class="formulario__label">
+                <p class="formulario-paragrafo">Nome</p>
+                <label class="formulario-nome" for="text"><input class="text_input" type="text" name="text"
+                        placeholder="Nome" id="Nome"></label>
             </div>
 
-            <div>
-                <p class="formulario-paragrafo">
-                    E-mail:<br />
-                    <input type="text" size="50" name="replyto" class="formulario-email">
-                </p>
+            <div class="formulario__label">
+                <p class="formulario-paragrafo">E-mail</p>
+                <label class="formulario-email" for="E-mail"><input class="email_input" type="E-mail" name="E-mail"
+                        placeholder="nome@email.com" id="E-mail"></label>
             </div>
 
-            <div>
-                <p class="formulario-paragrafo">
-                    Mensagem:<br />
-                    <input type="text" size="50" name="Mensagem" class="formulario-mensagem">
-                </p>
+            <div class="formulario__label">
+                <p class="formulario-paragrafo">Mensagem</p>
+                <label class="formulario-mensagem" for="text"><input class="mensagem_input" type="text" name="text"
+                        placeholder="Vamos conversar? Escreva aqui sua mensagem." id="Mensagem"></label>
             </div>
 
-            <div class="formulario-botoes">
-                <p class="formulario-botoes_paragrafo">
-                    <input type="submit" name="BTEnvia" value="Enviar" class="formulario-botao_enviar">
-                    <input type="reset" name="BTApaga" value="Apagar" class="formulario-botao_apagar">
-                </p>
-            </div>
-        </div>
-    </form>
+
+            <p class="formulario-botoes_paragrafo">
+                <input type="submit" name="BTEnvia" value="Enviar" class="formulario-botao_enviar">
+                <input type="reset" name="BTApaga" value="Apagar" class="formulario-botao_apagar">
+            </p>
+
+        </form>
+    </main>
 
     <footer class="rodape">
         <p>Desenvolvido por Rose</p>
