@@ -19,38 +19,36 @@
     </header>
 
     <main class="apresentacao__formulario">
-        <h1 class="apresentacao__titulo">Contato</h1>
-        <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
-            <input type="hidden" name="recipient" value="roseaneborges@alabuta.com">
-            <input type="hidden" name="redirect" value="https://github.com/Roseandre/Portfolio">
-            <input type="hidden" name="subject" value="teste de assunto">
-            <input type="hidden" name="email" value="roseaneborges@alabuta.com">
+        <h1 class="apresentacao__titulo-formulario">Contato</h1>
+        <form action="https://formsubmit.co/roseaneborges@alabuta.com" method="POST">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://portfolioroseaneborges.vercel.app/">
 
             <div class="formulario__label">
                 <p class="formulario-paragrafo">Nome</p>
-                <label class="formulario-nome" for="text"><input class="text_input" type="text" name="text"
-                        placeholder="Nome" id="Nome"></label>
+                <input class="formulario-nome text_input" type="text" name="name" placeholder="Nome" required>
             </div>
 
             <div class="formulario__label">
                 <p class="formulario-paragrafo">E-mail</p>
-                <label class="formulario-email" for="E-mail"><input class="email_input" type="E-mail" name="E-mail"
-                        placeholder="nome@email.com" id="E-mail"></label>
+                <input class="formulario-email email_input" type="email" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="formulario__label">
+                <p class="formulario-paragrafo">Assunto</p>
+                <input class="formulario-email email_input" type="text" name="subject" placeholder="Assunto" required>
             </div>
 
             <div class="formulario__label">
                 <p class="formulario-paragrafo">Mensagem</p>
-                <label class="formulario-mensagem" for="text"><input class="mensagem_input" type="text" name="text"
-                        placeholder="Vamos conversar? Escreva aqui sua mensagem." id="Mensagem"></label>
+                <textarea class="formulario-mensagem mensagem_input" name="message" placeholder="Mensagem"
+                    required></textarea>
             </div>
 
-
-            <p class="formulario-botoes_paragrafo">
-                <input type="submit" name="BTEnvia" value="Enviar" class="formulario-botao_enviar">
-                <input type="reset" name="BTApaga" value="Apagar" class="formulario-botao_apagar">
-            </p>
-
+            <button class="formulario-botao_enviar" type="submit">Enviar</button>
+            
         </form>
+
     </main>
 
     <footer class="rodape">
