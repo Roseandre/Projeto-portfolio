@@ -192,11 +192,6 @@ a {
     border: var(--cor-secundaria);
 }
 
-.formulario-botoes_paragrafo {
-    display: flex;
-    column-gap: 1em;
-}
-
 .formulario-botao_enviar {
     width: 8rem;
     height: 2.8em;
@@ -325,7 +320,7 @@ small {
 
     .formulario-botao_enviar {
         width: 100%;
-        height: 3em;
+        height: 3.5em;
         border: 2px solid var(--cor-terciaria);
         border-radius: 4px;
         background-color: var(--cor-primaria);
